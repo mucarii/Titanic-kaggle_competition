@@ -82,3 +82,5 @@ predictions = pipeline.predict(test_final)
 submission = pd.DataFrame({"PassengerId": test["PassengerId"], "Survived": predictions})
 submission.to_csv("submission.csv", index=False)
 print("Arquivo de submissão salvo como 'submission.csv'.")
+
+# %%
